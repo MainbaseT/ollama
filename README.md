@@ -53,8 +53,8 @@ Here are some example models that can be downloaded:
 | Llama 3            | 70B        | 40GB  | `ollama run llama3:70b`        |
 | Phi 3 Mini         | 3.8B       | 2.3GB | `ollama run phi3`              |
 | Phi 3 Medium       | 14B        | 7.9GB | `ollama run phi3:medium`       |
-| Gemma              | 2B         | 1.4GB | `ollama run gemma:2b`          |
-| Gemma              | 7B         | 4.8GB | `ollama run gemma:7b`          |
+| Gemma 2            | 9B         | 5.5GB | `ollama run gemma2`            |
+| Gemma 2            | 27B        | 16GB  | `ollama run gemma2:27b`        |
 | Mistral            | 7B         | 4.1GB | `ollama run mistral`           |
 | Moondream 2        | 1.4B       | 829MB | `ollama run moondream`         |
 | Neural Chat        | 7B         | 4.1GB | `ollama run neural-chat`       |
@@ -64,7 +64,8 @@ Here are some example models that can be downloaded:
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`             |
 | Solar              | 10.7B      | 6.1GB | `ollama run solar`             |
 
-> Note: You should have at least 8 GB of RAM available to run the 7B models, 16 GB to run the 13B models, and 32 GB to run the 33B models.
+> [!NOTE]
+> You should have at least 8 GB of RAM available to run the 7B models, 16 GB to run the 13B models, and 32 GB to run the 33B models.
 
 ## Customize a model
 
@@ -182,6 +183,12 @@ $ ollama run llama3 "Summarize this file: $(cat README.md)"
  Ollama is a lightweight, extensible framework for building and running language models on the local machine. It provides a simple API for creating, running, and managing models, as well as a library of pre-built models that can be easily used in a variety of applications.
 ```
 
+### Show model information
+
+```
+ollama show llama3
+```
+
 ### List models on your computer
 
 ```
@@ -286,6 +293,11 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [Olpaka](https://github.com/Otacon/olpaka) (User-friendly Flutter Web App for Ollama)
 - [OllamaSpring](https://github.com/CrazyNeil/OllamaSpring) (Ollama Client for macOS)
 - [LLocal.in](https://github.com/kartikm7/llocal) (Easy to use Electron Desktop Client for Ollama)
+- [Ollama with Google Mesop](https://github.com/rapidarchitect/ollama_mesop/) (Mesop Chat Client implementation with Ollama)
+- [Kerlig AI](https://www.kerlig.com/) (AI writing assistant for macOS)
+- [AI Studio](https://github.com/MindWorkAI/AI-Studio)
+- [Sidellama](https://github.com/gyopak/sidellama) (browser-based LLM client)
+- [LLMStack](https://github.com/trypromptly/LLMStack) (No-code multi-agent framework to build LLM agents and workflows)
 
 ### Terminal
 
@@ -332,6 +344,7 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [OllamaSharp for .NET](https://github.com/awaescher/OllamaSharp)
 - [Ollama for Ruby](https://github.com/gbaptista/ollama-ai)
 - [Ollama-rs for Rust](https://github.com/pepperoni21/ollama-rs)
+- [Ollama-hpp for C++](https://github.com/jmont-dev/ollama-hpp)
 - [Ollama4j for Java](https://github.com/amithkoujalgi/ollama4j)
 - [ModelFusion Typescript Library](https://modelfusion.dev/integration/model-provider/ollama)
 - [OllamaKit for Swift](https://github.com/kevinhermawan/OllamaKit)
